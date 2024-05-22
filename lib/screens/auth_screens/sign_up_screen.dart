@@ -170,7 +170,7 @@ class _SignupScreenState extends State<SignupScreen> {
 
         const InputTextField(
           hintText: "Enter Code",
-          prefixicon: Icons.lock_open,
+          prefixicon: Icons.key_rounded,
         ),
         SizedBox(
           height: height * 0.04,
@@ -186,7 +186,7 @@ class _SignupScreenState extends State<SignupScreen> {
 
         const InputTextField(
           hintText: "Enter your Email",
-          prefixicon: Icons.lock_open,
+          prefixicon: Icons.mail_outline_rounded,
         ),
       ],
     );
@@ -219,7 +219,7 @@ class _SignupScreenState extends State<SignupScreen> {
         const InputTextField(
           type: TextFieldType.Password,
           hintText: "Enter your password",
-          prefixicon: Icons.lock_open,
+          prefixicon: Icons.lock_outline,
         ),
         SizedBox(
           height: height * 0.04,
@@ -235,7 +235,7 @@ class _SignupScreenState extends State<SignupScreen> {
         const InputTextField(
           type: TextFieldType.Password,
           hintText: "Confirm your Password",
-          prefixicon: Icons.lock_open,
+          prefixicon: Icons.lock_outline,
         ),
       ],
     );
