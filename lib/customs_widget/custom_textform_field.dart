@@ -49,10 +49,14 @@ class _InputTextFieldState extends State<InputTextField> {
       keyboardType: keyboardType,
       decoration: InputDecoration(
         hintText: widget.hintText,
-        prefixIcon: Icon(
-          widget.prefixicon,
-          color: Colors.white,
-          size: 18,
+        prefixIcon: Padding(
+          padding: EdgeInsets.only(
+            right: width * 0.02,
+          ),
+          child: Icon(
+            widget.prefixicon,
+            color: Colors.white,
+          ),
         ),
         suffixIcon: widget.type == TextFieldType.Password
             ? IconButton(
@@ -71,7 +75,7 @@ class _InputTextFieldState extends State<InputTextField> {
         hintStyle: const TextStyle(
           color: Colors.white,
           fontSize: 12,
-          fontWeight: FontWeight.w400,
+          fontWeight: FontWeight.w300,
         ),
         focusedBorder: const UnderlineInputBorder(
           borderSide: BorderSide(
@@ -83,10 +87,11 @@ class _InputTextFieldState extends State<InputTextField> {
             color: Colors.white,
           ),
         ),
-        contentPadding: EdgeInsets.only(
-          left: width * 0.05,
-          bottom: height * 0.02,
-          top: height * 0.02,
+        prefixIconConstraints: BoxConstraints.loose(
+          Size(
+            width * 0.2,
+            height * 0.025,
+          ),
         ),
       ),
     );

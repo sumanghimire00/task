@@ -28,7 +28,9 @@ class _SignupScreenState extends State<SignupScreen> {
           // First Semi-transparent overlay
           Positioned.fill(
             child: Container(
-              color: Colors.black.withOpacity(0.5),
+              color: Colors.black.withOpacity(
+                0.9,
+              ),
             ),
           ),
           // Second Semi-transparent overlay with content
@@ -42,7 +44,7 @@ class _SignupScreenState extends State<SignupScreen> {
             child: SafeArea(
               child: Padding(
                 padding: EdgeInsets.symmetric(
-                  vertical: height * 0.02,
+                  vertical: height * 0.03,
                   horizontal: width * 0.03,
                 ),
                 child: Column(
@@ -61,7 +63,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         icon: const Icon(
                           Icons.arrow_back,
                           color: Colors.white,
-                          size: 35,
+                          size: 30,
                         ),
                       ),
                     ),
@@ -69,7 +71,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       "Sign up",
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
-                        fontSize: height * 0.035,
+                        fontSize: height * 0.036,
                         color: Colors.white,
                       ),
                     ),
@@ -83,7 +85,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     //  Password Widget
                     _passwordWidget(),
                     SizedBox(
-                      height: height * 0.09,
+                      height: height * 0.080,
                     ),
                     //  Register Button
                     CustomButton(
@@ -111,8 +113,9 @@ class _SignupScreenState extends State<SignupScreen> {
           const Text(
             "If you already have an account register",
             style: TextStyle(
-              fontSize: 14,
+              fontSize: 16,
               color: Colors.white,
+              fontWeight: FontWeight.w300,
             ),
           ),
           Row(
@@ -122,6 +125,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 style: TextStyle(
                   fontSize: 14,
                   color: Colors.white,
+                  fontWeight: FontWeight.w400,
                 ),
               ),
               TextButton(
@@ -131,6 +135,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   style: TextStyle(
                     fontSize: 14,
                     color: Colors.yellow,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
               ),
@@ -154,7 +159,7 @@ class _SignupScreenState extends State<SignupScreen> {
           ),
         ),
         SizedBox(
-          height: height * 0.01,
+          height: height * 0.02,
         ),
         // Activation code Field
         const Text(
@@ -170,7 +175,7 @@ class _SignupScreenState extends State<SignupScreen> {
           prefixicon: Icons.lock_open,
         ),
         SizedBox(
-          height: height * 0.02,
+          height: height * 0.04,
         ),
         // Email Text form field
         const Text(
@@ -202,7 +207,7 @@ class _SignupScreenState extends State<SignupScreen> {
           ),
         ),
         SizedBox(
-          height: height * 0.01,
+          height: height * 0.02,
         ),
         // Password field
         const Text(
@@ -219,7 +224,7 @@ class _SignupScreenState extends State<SignupScreen> {
           prefixicon: Icons.lock_open,
         ),
         SizedBox(
-          height: height * 0.02,
+          height: height * 0.04,
         ),
         // Confirm password field
         const Text(
@@ -229,7 +234,6 @@ class _SignupScreenState extends State<SignupScreen> {
             color: Colors.white,
           ),
         ),
-
         const InputTextField(
           type: TextFieldType.Password,
           hintText: "Confirm your Password",
