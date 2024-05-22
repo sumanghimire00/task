@@ -29,16 +29,11 @@ class _SignupScreenState extends State<SignupScreen> {
           Positioned.fill(
             child: Container(
               color: Colors.black.withOpacity(
-                0.9,
+                0.95,
               ),
             ),
           ),
-          // Second Semi-transparent overlay with content
-          Positioned.fill(
-            child: Container(
-              color: Colors.black.withOpacity(0.3),
-            ),
-          ),
+
           // Scrollable content
           SingleChildScrollView(
             child: SafeArea(
@@ -54,16 +49,17 @@ class _SignupScreenState extends State<SignupScreen> {
                     Padding(
                       padding: EdgeInsets.only(
                         bottom: height * 0.02,
+                        right: width * 1.2,
                       ),
                       child: IconButton(
                         padding: EdgeInsets.zero,
                         onPressed: () {
                           Navigator.of(context).pop();
                         },
-                        icon: const Icon(
+                        icon: Icon(
                           Icons.arrow_back,
                           color: Colors.white,
-                          size: 30,
+                          size: width * 0.08,
                         ),
                       ),
                     ),
