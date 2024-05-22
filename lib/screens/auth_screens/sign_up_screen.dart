@@ -29,7 +29,7 @@ class _SignupScreenState extends State<SignupScreen> {
           Positioned.fill(
             child: Container(
               color: Colors.black.withOpacity(
-                0.95,
+                0.94,
               ),
             ),
           ),
