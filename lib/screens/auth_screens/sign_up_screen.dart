@@ -39,7 +39,7 @@ class _SignupScreenState extends State<SignupScreen> {
             child: SafeArea(
               child: Padding(
                 padding: EdgeInsets.symmetric(
-                  vertical: height * 0.03,
+                  vertical: height * 0.02,
                   horizontal: width * 0.03,
                 ),
                 child: Column(
@@ -49,7 +49,6 @@ class _SignupScreenState extends State<SignupScreen> {
                     Padding(
                       padding: EdgeInsets.only(
                         bottom: height * 0.02,
-                        right: width * 1.2,
                       ),
                       child: IconButton(
                         padding: EdgeInsets.zero,
@@ -87,6 +86,9 @@ class _SignupScreenState extends State<SignupScreen> {
                     CustomButton(
                       labelButton: "Register",
                       onPressed: () {},
+                    ),
+                    SizedBox(
+                      height: height * 0.02,
                     ),
                   ],
                 ),
